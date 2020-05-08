@@ -13,7 +13,7 @@ int stopThread = 0;
 void main() {
 	char choice = '+';
 	bool flag = false;
-	printf("+ : to create new process\n- : to delete last process\nq : exit\n\n");
+	printf("+ : to create new process\n- : to delete last thread\nq : exit\n\n");
 	while (true) {
 		choice = _getch();//waiting for pressing, returns its code
 		switch (choice) {
@@ -28,7 +28,7 @@ void main() {
 			break;
 		}
 		case '-': {
-			cout << "YOU PUT \"-\"\nDelete process!\n";
+			cout << "YOU PUT \"-\"\nDelete thread!\n";
 			if (threadNumber == 0) {
 				cout << "Nothing to delete..." << endl;
 				break;
